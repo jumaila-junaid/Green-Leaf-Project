@@ -38,6 +38,6 @@ Completed
 
 ## 👩‍💻 Developer
 
-**Junaideen Fathima Jumaila**
+**Jumaila Junaid**
 
 GitHub: [jumaila-junaid](https://github.com/jumaila-junaid)
