@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenLeaf Plant Store - Beautiful plants for your home and garden">
+    <title>GreenLeaf Plant Store</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🌿 GreenLeaf
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#plants">Plants</a></li>
+                <li><a href="#care">Plant Care</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+                <p class="welcome-text">Welcome to GreenLeaf</p>
+
+                <h1>Bring Nature Into Your Home</h1>
+
+                <p>
+                    Discover beautiful plants and make your home
+                    fresh, peaceful and green.
+                </p>
+
+                <a href="#plants" class="hero-button">Explore Plants</a>
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="section-title">
+                <p class="small-title">ABOUT US</p>
+                <h2>Grow Green, Live Better</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-image">
+                    <img src="images/plant1.jpg" alt="Beautiful green indoor plant">
+                </div>
+
+                <div class="about-text">
+                    <h3>Your Little Green Corner</h3>
+
+                    <p>
+                        GreenLeaf Plant Store offers a variety of beautiful
+                        indoor and outdoor plants for homes, offices and gardens.
+                    </p>
+
+                    <p>
+                        We believe that plants can make every space healthier,
+                        fresher and more peaceful.
+                    </p>
+
+                    <p>
+                        Our goal is to help plant lovers choose the right plants
+                        and learn simple ways to take care of them.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Plants Section -->
+        <section id="plants" class="plants section">
+
+            <div class="section-title">
+                <p class="small-title">OUR COLLECTION</p>
+                <h2>Popular Plants</h2>
+                <p>Choose your favourite plant for your space.</p>
+            </div>
+
+
+            <div class="plant-container">
+
+                <!-- Plant 1 -->
+                <article class="plant-card">
+                    <img src="images/plant1.jpg" alt="Peace Lily plant">
+
+                    <div class="plant-info">
+                        <h3>Peace Lily</h3>
+                        <p>
+                            A beautiful indoor plant with elegant white flowers.
+                        </p>
+                        <span class="price">Rs. 2,500</span>
+                    </div>
+                </article>
+
+
+                <!-- Plant 2 -->
+                <article class="plant-card">
+                    <img src="images/plant2.jpg" alt="Snake Plant">
+
+                    <div class="plant-info">
+                        <h3>Snake Plant</h3>
+                        <p>
+                            An easy-care plant that is perfect for homes and offices.
+                        </p>
+                        <span class="price">Rs. 2,000</span>
+                    </div>
+                </article>
+
+
+                <!-- Plant 3 -->
+                <article class="plant-card">
+                    <img src="images/plant3.jpg" alt="Monstera plant">
+
+                    <div class="plant-info">
+                        <h3>Monstera</h3>
+                        <p>
+                            A tropical plant with large, attractive green leaves.
+                        </p>
+                        <span class="price">Rs. 3,500</span>
+                    </div>
+                </article>
+
+
+                <!-- Plant 4 -->
+                <article class="plant-card">
+                    <img src="images/plant4.jpg" alt="Aloe Vera plant">
+
+                    <div class="plant-info">
+                        <h3>Aloe Vera</h3>
+                        <p>
+                            A useful and low-maintenance plant for your home.
+                        </p>
+                        <span class="price">Rs. 1,500</span>
+                    </div>
+                </article>
+
+
+                <!-- Plant 5 -->
+                <article class="plant-card">
+                    <img src="images/plant5.jpg" alt="Rose plant">
+
+                    <div class="plant-info">
+                        <h3>Rose Plant</h3>
+                        <p>
+                            A colourful flowering plant that brightens your garden.
+                        </p>
+                        <span class="price">Rs. 1,800</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Plant Care Section -->
+        <section id="care" class="care section">
+
+            <div class="section-title">
+                <p class="small-title">PLANT CARE</p>
+                <h2>Simple Plant Care Tips</h2>
+            </div>
+
+            <div class="care-content">
+
+                <div class="care-text">
+                    <h3>Help Your Plants Grow Healthy</h3>
+
+                    <p>
+                        Follow these simple tips to keep your plants healthy
+                        and beautiful.
+                    </p>
+
+                    <!-- Unordered List Requirement -->
+                    <ul class="care-list">
+                        <li>Give your plants the right amount of sunlight.</li>
+                        <li>Water the plants according to their needs.</li>
+                        <li>Use good quality soil and fertilizer.</li>
+                        <li>Remove dry and damaged leaves regularly.</li>
+                        <li>Keep your plants clean and pest-free.</li>
+                    </ul>
+
+                    <!-- JavaScript Button -->
+                    <button id="tipButton" class="tip-button" onclick="showPlantTip()">
+                        Get a Plant Care Tip
+                    </button>
+
+                    <p id="tipMessage" class="tip-message"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Plant Price Table -->
+        <section class="table-section section">
+
+            <div class="section-title">
+                <p class="small-title">PLANT PRICES</p>
+                <h2>Our Plant Collection</h2>
+            </div>
+
+            <!-- Table Requirement -->
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plant Name</th>
+                            <th>Plant Type</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Peace Lily</td>
+                            <td>Indoor</td>
+                            <td>Rs. 2,500</td>
+                        </tr>
+
+                        <tr>
+                            <td>Snake Plant</td>
+                            <td>Indoor</td>
+                            <td>Rs. 2,000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Monstera</td>
+                            <td>Tropical</td>
+                            <td>Rs. 3,500</td>
+                        </tr>
+
+                        <tr>
+                            <td>Aloe Vera</td>
+                            <td>Medicinal</td>
+                            <td>Rs. 1,500</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rose Plant</td>
+                            <td>Flowering</td>
+                            <td>Rs. 1,800</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+
+            <div class="section-title">
+                <p class="small-title">GET IN TOUCH</p>
+                <h2>Contact GreenLeaf</h2>
+                <p>We would love to hear from you.</p>
+            </div>
+
+            <div class="contact-content">
+
+                <p>
+                    📧 Email:
+                    <a href="mailto:greenleaf@example.com">
+                        greenleaf@example.com
+                    </a>
+                </p>
+
+                <p>
+                    📞 Phone:
+                    <a href="tel:+94112345678">
+                        +94 11 234 5678
+                    </a>
+                </p>
+
+                <p>
+                    🌐 Visit:
+                    <a href="https://www.google.com" target="_blank">
+                        Google
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 GreenLeaf Plant Store. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

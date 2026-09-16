@@ -1,0 +1,518 @@
+/* =========================================
+   GREENLEAF PLANT STORE
+   Main Stylesheet
+   ========================================= */
+
+
+/* ---------- General Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f6faf6;
+    color: #26382b;
+}
+
+
+/* ---------- Header & Navigation ---------- */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #314a36;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2e7d32;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(30, 70, 40, 0.68),
+            rgba(30, 70, 40, 0.68)
+        ),
+        url("images/plant1.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: #ffffff;
+}
+
+.welcome-text {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    animation: fadeDown 1s ease;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    animation: fadeUp 1s ease;
+}
+
+.hero-content > p:not(.welcome-text) {
+    font-size: 19px;
+    margin-bottom: 30px;
+    animation: fadeUp 1.3s ease;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #ffffff;
+    color: #2e7d32;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    animation: fadeUp 1.5s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    background-color: #e8f5e9;
+}
+
+
+/* ---------- Common Section ---------- */
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.small-title {
+    color: #4caf50;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #234d2a;
+    margin-bottom: 10px;
+}
+
+.section-title > p:last-child {
+    color: #667568;
+}
+
+
+/* ---------- About Section ---------- */
+
+.about {
+    background-color: #ffffff;
+    max-width: none;
+    padding-left: max(30px, calc((100% - 1140px) / 2));
+    padding-right: max(30px, calc((100% - 1140px) / 2));
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 18px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #5c6d60;
+}
+
+
+/* ---------- Plants Section ---------- */
+
+.plants {
+    background-color: #f6faf6;
+    max-width: none;
+    padding-left: max(30px, calc((100% - 1140px) / 2));
+    padding-right: max(30px, calc((100% - 1140px) / 2));
+}
+
+.plant-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.plant-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.plant-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.plant-info {
+    padding: 22px;
+}
+
+.plant-info h3 {
+    color: #2e7d32;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.plant-info p {
+    color: #68766b;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #1b5e20;
+    font-size: 18px;
+}
+
+
+/* ---------- Plant Care Section ---------- */
+
+.care {
+    background-color: #ffffff;
+    max-width: none;
+    padding-left: max(30px, calc((100% - 1140px) / 2));
+    padding-right: max(30px, calc((100% - 1140px) / 2));
+}
+
+.care-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.care-text h3 {
+    font-size: 27px;
+    color: #2e7d32;
+    margin-bottom: 12px;
+}
+
+.care-text > p {
+    color: #667568;
+    margin-bottom: 25px;
+}
+
+.care-list {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.care-list li {
+    margin-bottom: 12px;
+    color: #4f6053;
+}
+
+.tip-button {
+    border: none;
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 13px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tip-button:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+}
+
+.tip-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+
+/* ---------- Table Section ---------- */
+
+.table-section {
+    background-color: #f6faf6;
+    max-width: none;
+    padding-left: max(30px, calc((100% - 1000px) / 2));
+    padding-right: max(30px, calc((100% - 1000px) / 2));
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e8e1;
+}
+
+th {
+    background-color: #2e7d32;
+    color: #ffffff;
+}
+
+td {
+    color: #526257;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #f1f8f2;
+}
+
+
+/* ---------- Contact Section ---------- */
+
+.contact {
+    background-color: #ffffff;
+    max-width: none;
+    padding-left: max(30px, calc((100% - 900px) / 2));
+    padding-right: max(30px, calc((100% - 900px) / 2));
+}
+
+.contact-content {
+    text-align: center;
+    background-color: #f1f8f2;
+    padding: 35px;
+    border-radius: 16px;
+}
+
+.contact-content p {
+    margin-bottom: 15px;
+    color: #526257;
+}
+
+.contact-content p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-content a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #1f3d25;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ---------- Simple Animations ---------- */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .plant-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-content > p:not(.welcome-text) {
+        font-size: 16px;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .plant-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-content {
+        padding: 25px 15px;
+    }
+}
